@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark-bg: #0f172a;
+  --color-dark-card: #1e293b;
+  --color-accent: #38bdf8;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #f8fafc;
+  font-family: sans-serif;
+}
