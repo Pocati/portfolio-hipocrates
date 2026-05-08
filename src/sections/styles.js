@@ -96,18 +96,14 @@ export const ContentArea = styled.div`
     width: 100%;
     position: relative;
 
-    @media (min-width: 768px) {
-        height: 500px;
-    }
-
     @media (min-width: 1024px) {
-        width: 66.666%;
+        width: 66%;
+        height: 500px;
     }
 `;
 
 export const ProjectCard = styled(motion.div)`
     width: 100%;
-    min-height: 500px;
 
     background: rgba(15, 23, 42, 0.5);
 
@@ -119,23 +115,23 @@ export const ProjectCard = styled(motion.div)`
     display: flex;
     flex-direction: column;
 
-    box-shadow: 0 25px 50px -12px
-        rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
     @media (min-width: 768px) {
+        min-height: 500px;
         flex-direction: row;
     }
 `;
 
 export const ImageContainer = styled.div`
     width: 100%;
-    height: 12rem;
+    height: 220px;
 
     overflow: hidden;
 
     @media (min-width: 768px) {
         width: 50%;
-        height: 100%;
+        height: auto;
     }
 `;
 
@@ -156,11 +152,12 @@ export const ProjectImage = styled.img`
 
 export const InfoContainer = styled.div`
     padding: 2rem;
-    gap: 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    gap: 1rem;
 
     @media (min-width: 768px) {
         width: 50%;
@@ -173,7 +170,7 @@ export const TechList = styled.div`
 
     flex-wrap: wrap;
 
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 `;
 
 export const TechTag = styled.span`
@@ -195,7 +192,7 @@ export const ProjectTitle = styled.h3`
 
     color: white;
 
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 `;
 
 export const Description = styled.p`
@@ -203,7 +200,7 @@ export const Description = styled.p`
 
     line-height: 1.7;
 
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 `;
 
 export const ProjectLink = styled.a`
