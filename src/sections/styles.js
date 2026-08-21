@@ -70,7 +70,7 @@ export const ProjectButton = styled.button`
 
     &:hover {
         border-color: ${({ $active }) =>
-            $active ? '#0ea5e9' : '#475569'};
+        $active ? '#0ea5e9' : '#475569'};
     }
 
     span {
@@ -139,7 +139,7 @@ export const ProjectImage = styled.img`
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     filter: grayscale(100%);
 
